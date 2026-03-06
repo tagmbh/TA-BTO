@@ -1,0 +1,55 @@
+/* T-Alpha GmbH Corporate Design */
+
+:root {
+  /* T-Alpha Blue */
+  --md-primary-fg-color: #0068B4;
+  --md-primary-fg-color--light: #2d8fd4;
+  --md-primary-fg-color--dark: #004d87;
+  --md-accent-fg-color: #0068B4;
+  --md-accent-fg-color--transparent: rgba(0, 104, 180, 0.1);
+}
+
+/* Slate (dark mode) overrides */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0068B4;
+  --md-primary-fg-color--light: #2d8fd4;
+  --md-primary-fg-color--dark: #004d87;
+  --md-accent-fg-color: #4da6e0;
+  --md-accent-fg-color--transparent: rgba(0, 104, 180, 0.1);
+}
+
+/* Header */
+.md-header {
+  background-color: #0068B4;
+}
+
+/* Logo sizing */
+.md-header__button.md-logo img {
+  height: 1.6rem;
+}
+
+/* Footer */
+.md-footer {
+  background-color: #222;
+}
+
+.md-footer-meta {
+  background-color: #1a1a1a;
+}
+
+/* Links */
+.md-typeset a {
+  color: #0068B4;
+}
+
+.md-typeset a:hover {
+  color: #004d87;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #4da6e0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: #7dbfea;
+}
