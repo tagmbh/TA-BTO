@@ -1,7 +1,7 @@
 site_name: Blue Team Operations – Kundenportal / Customer Portal
 site_description: Wissensdatenbank für Blue Team Operations & Managed SIEM Plus Service
 site_author: TA GmbH
-site_url: ""
+site_url: https://tagmbh.github.io/TA-BTO/
 
 theme:
   name: material
