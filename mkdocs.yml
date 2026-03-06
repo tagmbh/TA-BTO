@@ -1,0 +1,107 @@
+site_name: Blue Team Operations – Kundenportal / Customer Portal
+site_description: Wissensdatenbank für Blue Team Operations & Managed SIEM Plus Service
+site_author: TA GmbH
+site_url: ""
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Zum Dunkelmodus wechseln
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Zum Hellmodus wechseln
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.integrate
+  icon:
+    logo: material/shield-lock
+  font:
+    text: Inter
+    code: Fira Code
+
+plugins:
+  - search:
+      lang:
+        - de
+        - en
+  - i18n:
+      default_language: de
+      languages:
+        de:
+          name: Deutsch
+          build: true
+        en:
+          name: English
+          build: true
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.keys
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  alternate:
+    - name: Deutsch
+      link: /de/
+      lang: de
+    - name: English
+      link: /en/
+      lang: en
+
+nav:
+  - Startseite: index.md
+  - Überblick:
+      - Blue Team Operations: de/ueberblick.md
+      - Systemarchitektur: de/architektur.md
+  - Systeme:
+      - SIEM – Wazuh: de/systeme/siem-wazuh.md
+      - IMS – TheHive & IRIS: de/systeme/ims-thehive-iris.md
+      - TIPL – MISP: de/systeme/tipl-misp.md
+      - SOAR – Shuffle: de/systeme/soar-shuffle.md
+      - Cortex: de/systeme/cortex.md
+  - Managed Service:
+      - SIEM Plus: de/service/siem-plus.md
+      - Onboarding: de/service/onboarding.md
+  - Glossar: de/glossar.md
+  - "--- English ---":
+      - Overview:
+          - Blue Team Operations: en/overview.md
+          - System Architecture: en/architecture.md
+      - Systems:
+          - SIEM – Wazuh: en/systems/siem-wazuh.md
+          - IMS – TheHive & IRIS: en/systems/ims-thehive-iris.md
+          - TIPL – MISP: en/systems/tipl-misp.md
+          - SOAR – Shuffle: en/systems/soar-shuffle.md
+          - Cortex: en/systems/cortex.md
+      - Managed Service:
+          - SIEM Plus: en/service/siem-plus.md
+          - Onboarding: en/service/onboarding.md
+      - Glossary: en/glossary.md
